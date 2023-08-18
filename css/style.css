@@ -274,6 +274,34 @@ textarea {
         margin: 0 3px; }
       .about__content-details-para:last-child {
         margin-bottom: 4rem; }
+.education {
+  background: #7ce1f3; }
+  .education__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem; }
+    @media only screen and (max-width: 56.25em) {
+      .education__content {
+        grid-template-columns: 1fr;
+        grid-gap: 8rem; } }
+    .education__content-title {
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 3rem; }
+      @media only screen and (max-width: 37.5em) {
+        .education__content-title {
+          font-size: 2.4rem; } }
+    .education__content-details-para {
+      font-size: 1.8rem;
+      color: rgb(0, 0, 0);
+      max-width: 60rem;
+      line-height: 1.7;
+      margin-bottom: 1rem; }
+      .education__content-details-para--hl {
+        font-weight: 700;
+        margin: 0 3px; }
+      .education__content-details-para:last-child {
+        margin-bottom: 4rem; }
 
 .projects__row {
   display: grid;
