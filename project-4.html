@@ -126,29 +126,46 @@
                 range of possible outcomes in a probabilistic model. So what better way then to learn it using a lecture available online:
                 <centre>
                   <iframe id="ytplayer" type="text/html" width="640" height="360"
-                    src="https://www.youtube.com/watch?v=OgO1gpXSUzU"
+                    src="https://www.youtube.com/embed/OgO1gpXSUzU"
                     frameborder="0">
                   </iframe>
                 </centre>
+                <br>
+                After learning more about the process I found some libraries that could help me implement a <b>Monte Carlo Simulation</b> into code
+                and ways to get current data from Yahoo Finance. I then made a simulation program in <b>Python</b> which performs a Monte Carlo 
+                simulation to model the performance of a portfolio consisting of multiple stocks over a specified number of days. The goal of 
+                the code is to simulate how the portfolio's value might change over time, considering the historical mean returns and 
+                covariance between the selected stocks.
+                <br>
+                <br>
+                The main way that this code works is that a loop runs for each simulation (m), where:
+                Random returns are generated based on the mean returns and covariance matrix using Cholesky decomposition.
+                The portfolio's daily returns are calculated by multiplying the random returns with the portfolio weights and adding 1.
+                The cumulative product of daily returns is calculated to simulate the portfolio's value over time.
+                <br><br>
+                The results are stored in the <b>portfolio_sims</b> matrix.
+                uses <b>matplotlib.pyplot</b> to plot the simulated portfolio values over time. The x-axis represents the number of days, 
+                and the y-axis represents the portfolio value in dollars. The title and labels for the axes are added to the plot which is 
+                displayed at the top of this page.
+                <br><br>
+                The next step in my journey is to learn about how the Monte Carlo Method is used to price options.
               </p>
+              <!--
               <p class="project-details__desc-para">
                 is a...
               </p>
+              -->
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
                 <div class="skills__skill">Python</div>
                 <div class="skills__skill">NumPy</div>
-                <div class="skills__skill">PlotPy</div>
+                <div class="skills__skill">Matplotlib</div>
                 <div class="skills__skill">Pandas</div>
                 <div class="skills__skill">Pandas-DataReader</div>
                 <div class="skills__skill">GIT</div>
-                <div class="skills__skill"></div>
-                <div class="skills__skill"></div>
-                <div class="skills__skill"></div>
-                <div class="skills__skill"></div>
-                <div class="skills__skill"></div>
+                <div class="skills__skill">yfinance</div>
               </div>
             </div>
             <!--
