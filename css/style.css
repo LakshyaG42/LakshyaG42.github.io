@@ -491,6 +491,11 @@ textarea {
     @media only screen and (max-width: 37.5em) {
       .project-details__content-title {
         font-size: 2.4rem; } }
+  .project-details__content-heading{
+    font-weight: 650;
+    font-size: 2.5rem;
+    margin-bottom: 2rem; }
+                  
 
 .project-details__showcase-img-cont {
   width: 100%;
