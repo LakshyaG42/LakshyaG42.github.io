@@ -186,7 +186,7 @@ textarea {
       padding: 8rem 0; } }
 
 .text-primary {
-  color: #fff;
+  color: #ffffff;
   font-size: 2.2rem;
   text-align: center;
   width: 100%;
@@ -200,11 +200,12 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  /*background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg); */
+  background: linear-gradient(to right, rgba(209, 92, 255, 0.6), rgba(35, 105, 255, 0.6)), url(../../assets/jpeg/city-background2.jpg);
   background-position: center;
-  height: 100vh;
-  min-height: 80rem;
-  max-height: 120rem;
+  height: 80vh;
+  min-height: 60rem;
+  max-height: 75rem;
   position: relative; }
   @media only screen and (max-width: 37.5em) {
     .home-hero {
@@ -290,21 +291,50 @@ textarea {
       .about__content-details-para:last-child {
         margin-bottom: 4rem; }
 .education {
-  background: #7ce1f3; }
+  background:linear-gradient(to right, rgba(209, 92, 255, 0.6), rgba(35, 105, 255, 0.6)), url(../../assets/jpeg/businessSchool.jpg);
+  background-position: calc(70%) center;
+  height: 100vh;
+  min-height: 50rem;
+  max-height: 50rem; 
+  position: relative;}
+  .education__heading {
+    display: block;
+    color: #fff;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+   position: relative; }
   .education__content {
+    
+    color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10rem; }
     @media only screen and (max-width: 56.25em) {
       .education__content {
+        text-align: center;
         grid-template-columns: 1fr;
         grid-gap: 8rem; } }
     .education__content-title {
+      text-align: center;
       font-weight: 700;
       font-size: 2.8rem;
       margin-bottom: 3rem; }
       @media only screen and (max-width: 37.5em) {
         .education__content-title {
+          font-size: 2.4rem; } }
+    .education__content-details {
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+      font-size: 2rem;
+      margin-bottom: 3rem; }
+      @media only screen and (max-width: 37.5em) {
+        .education__content-details {
+          text-align: center;
           font-size: 2.4rem; } }
     .education__content-img {
       width: 50%;
@@ -313,7 +343,7 @@ textarea {
     }
     .education__content-details-para {
       font-size: 1.8rem;
-      color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
       max-width: 60rem;
       line-height: 1.7;
       margin-bottom: 1rem; }
@@ -373,7 +403,7 @@ textarea {
           font-size: 1.7rem; } }
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(209, 92, 255, 0.3), rgba(35, 105, 255, 0.3)), url(../../assets/jpeg/contact3city.jpg);
   background-size: cover;
   background-position: center; }
   .contact__form-container {
