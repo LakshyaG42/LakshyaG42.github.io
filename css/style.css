@@ -295,7 +295,7 @@ textarea {
   background-position: calc(70%) center;
   height: 100vh;
   min-height: 50rem;
-  max-height: 50rem; 
+  max-height: 70rem; 
   position: relative;}
   .education__heading {
     display: block;
