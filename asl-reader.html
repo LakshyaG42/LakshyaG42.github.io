@@ -119,19 +119,27 @@
               </p>
               <h3 class="project-details__content-title">Learning</h3>
               <p class="project-details__desc-para">
-                
+<b>Libraries Used: </b><br>
+<ul class = "project-details__desc-list">
+                <li>NumPy: Used for numerical operations, particularly for handling arrays and matrices efficiently. </li>
+                <li>Pandas: Used for data manipulation and analysis, mainly for organizing the image file paths and labels into a DataFrame.</li>
+                <li>Matplotlib and Seaborn: Used for data visualization, helping to understand the distribution of images by ASL sign and providing insights into the dataset.</li>
+                <li>PIL (Python Imaging Library): Used for image loading and preprocessing tasks.</li>
+                <li>Keras (with TensorFlow backend): Keras is a high-level neural networks API that provides an easy-to-use interface for building and training deep learning models. TensorFlow is the underlying backend used for computations.</li>
+</ul>
+<p class="project-details__desc-para">
 Throughout this project, I gained valuable insights and learned several key concepts:
 <br><br>
 <b>Data Preprocessing:</b> I learned how to load and preprocess images which is an essential step in building machine learning models. I learned how to resize, recolor, and transform images to be readable data which can be inputted into the model.
 <br>
 <br>
-Model Architecture: I researched and implemented a Convolutional Neural Network (CNN) architecture, understanding the purpose and functionality of each layer. I decided on using a Sequential model as I believed that it would give me the most insight and opportunity to learn about the uses of each layer. This included convolutional layers for feature extraction, pooling layers for down-sampling, dense layers for classification, and activation functions for introducing non-linearity.
+<b>Model Architecture:</b> I researched and implemented a Convolutional Neural Network (CNN) architecture, understanding the purpose and functionality of each layer. I decided on using a Sequential model as I believed that it would give me the most insight and opportunity to learn about the uses of each layer. This included convolutional layers for feature extraction, pooling layers for down-sampling, dense layers for classification, and activation functions for introducing non-linearity.
 <br>
 <br>
-Training Process: I learned how to compile and train the model using appropriate optimization algorithms, loss functions, and evaluation metrics. I also implemented callbacks for monitoring training progress and preventing overfitting.
+<b>Training Process:</b> I learned how to compile and train the model using appropriate optimization algorithms, loss functions, and evaluation metrics. I also implemented callbacks for monitoring training progress and preventing overfitting.
 <br>
 <br>
-Model Evaluation: I evaluated the model's performance using accuracy and loss metrics on both training and validation datasets. This helped me understand the model's effectiveness and identify areas for improvement. I mostly used matplotlib and numpy to make charts to gauge the success of each of the metrics I changed.
+<b>Model Evaluation:</b> I evaluated the model's performance using accuracy and loss metrics on both training and validation datasets. This helped me understand the model's effectiveness and identify areas for improvement. I mostly used matplotlib and numpy to make charts to gauge the success of each of the metrics I changed.
 <br>
 <br>
 <strong>Data Visualization</strong>
@@ -143,28 +151,60 @@ Significance: Visualizing the data distribution is essential for understanding t
 <br>
 <b>Model Architecture</b>
 <br>
+              </p>
+<div class="codebox-container">
+  <code class="codebox">
+    model = Sequential()
+
+    model.add(Conv2D(32, (5, 5), activation='relu', input_shape=(image_size, image_size, 3)))
+
+    model.add(MaxPooling2D(padding='same'))
+
+    model.add(Conv2D(64, (5, 5), activation='relu'))
+
+    model.add(MaxPooling2D(padding='same'))
+
+
+    model.add(Flatten())
+
+    model.add(Dense(256, activation='relu'))
+
+    model.add(Dropout(0.4))
+
+    model.add(Dense(128, activation='relu'))
+
+    model.add(Dropout(0.4))
+
+    model.add(Dense(36, activation='softmax'))
+
+    model.summary()
+  </code>
+</div>
+<p class="project-details__desc-para">
 Description: Here, I provided an overview of the model architecture used for ASL recognition. The architecture consists of convolutional layers followed by max-pooling layers for feature extraction and down-sampling. The flattened output is then fed into fully connected layers with ReLU activation functions for classification, followed by a softmax layer for multi-class classification.
 <br>
 Significance: Understanding the model architecture is crucial for designing an effective ASL recognition system. Each layer serves a specific purpose in extracting and transforming input data, ultimately leading to accurate predictions.
 <br>
 <br>
+
 <b>Training Progress</b>
+              </p>
 <div class="project-details__showcase-img-cont">
   <img
-    src=".assets/jpeg/trainingModel.png"
+    src="./assets/jpeg/trainingModel.png"
     alt="Project Image"
     class="project-details__showcase-img"
   />
 </div>
-
-Description: This section shows the training progress of the model over multiple epochs. Using training and validation accuracy and loss metrics, I monitored the model's performance during the training process. Early stopping and learning rate reduction callbacks were employed to prevent overfitting and improve convergence.
+<p class="project-details__desc-para">
+Description: Using training and validation accuracy and loss metrics, I monitored the model's performance during the training process. Early stopping and learning rate reduction callbacks were employed to prevent overfitting and improve convergence.
 <br>
 Significance: Tracking the training progress helps assess the model's convergence and performance over time. It allows for early detection of overfitting or underfitting issues and guides adjustments to hyperparameters or model architecture to optimize performance.
 <br>
 <br>
 <b>Model Evaluation</b>
 <br>
-Description: In this section, I evaluated the model's performance on both training and validation datasets. Using accuracy and loss metrics, I assessed the model's ability to correctly classify ASL signs. The evaluation provided insights into the model's effectiveness and generalization capability.
+Description: I evaluated the model's performance on both training and validation datasets. Using accuracy and loss metrics, I assessed the model's ability to correctly classify ASL signs. The evaluation provided insights into the model's effectiveness and generalization capability.
 <br>
 Significance: Model evaluation is critical for assessing its performance and identifying areas for improvement. By comparing training and validation metrics, I could detect potential issues such as overfitting or underfitting and adjust the model accordingly.
 <br>
@@ -180,12 +220,12 @@ Significance: Real-time ASL recognition has practical applications in assistive 
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">Google Calendar API</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill"></div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">Keras</div>
+                <div class="skills__skill">TensorFlow</div>
+                <div class="skills__skill">Sci-kit Learn</div>
+                <div class="skills__skill">Matplotlib</div>
+                <div class="skills__skill">NumPy</div>
                 <div class="skills__skill"></div>
                 <div class="skills__skill"></div>
                 <div class="skills__skill"></div>

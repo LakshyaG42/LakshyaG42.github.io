@@ -567,6 +567,17 @@ textarea {
     line-height: 1.7;
     color: rgb(0, 0, 0);
     margin-bottom: 2rem; }
+  .project-details__desc-list {
+      font-size: 1.8rem;
+      line-height: 1.7;
+      color: rgb(0, 0, 0);
+      margin-bottom: 2rem; 
+      list-style-type: disc;
+      padding-left: 2rem;
+    }
+  .project-details__desc-list li::marker {
+      color: #221b1b; /* Change the color of the bullet point */
+    }
 
 .project-details__tools-used {
   margin: 0 0 7rem 0; }
@@ -765,6 +776,35 @@ textarea {
       .main-footer__lower {
         padding: 3.5rem 0; } }
 
+
+
+.codebox-container {
+  position: relative;
+}
+
+.codebox {
+  border: 1px solid #fafcff; 
+  background-color: #292c31; 
+  color: #ffffff; 
+  white-space: pre-line;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 14px; 
+  display: inline-block;
+  border-radius: 5px; 
+}
+
+.codebox-container::before {
+  content: "Code:";
+  position: absolute;
+  top: -10px; 
+  left: 10px; 
+  background-color: #4d5b6b; 
+  color: #ffffff; 
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
 .skills {
   display: flex;
   flex-wrap: wrap; }
