@@ -94,32 +94,87 @@
         <h1 class="heading-primary">ASL Reader</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Welcome! This page is currently still a work in progress. Please check back in a week or two. Thank you for your time.
+            Welcome to my American Sign Language (ASL) Recognition Project! I completed this project to learn more about image classification tasks using convoluted neural networks and because I thought it was cool.
           </p>
-        </div>
-        <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Image</a>
         </div>
       </div>
     </section>
     <section class="project-details">
       <div class="main-container">
         <div class="project-details__content">
-          <div class="project-details__showcase-img-cont">
-            <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
-              alt="Project Image"
-              class="project-details__showcase-img"
-            />
-          </div>
           <div class="project-details__content-main">
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                This project...
+                In this project, I developed a convoluted neural network to recognize American Sign Language (ASL) characters from images. I conducted extensive research and implemented the model architecture with some inspiration of which layers to use from the Sign Language Classification project. Leveraging my prior knowledge from my WINLAB ML research internship, I applied machine learning techniques to build something that I found very interesting and practical.
+
+
+                <div class="project-details__showcase-img-cont">
+                  <img
+                    src="./assets/jpeg/dataset.png"
+                    alt="Project Image"
+                    class="project-details__showcase-img"
+                  />
+                </div>
               </p>
+              <h3 class="project-details__content-title">Learning</h3>
               <p class="project-details__desc-para">
-                is a...
+                
+Throughout this project, I gained valuable insights and learned several key concepts:
+<br><br>
+<b>Data Preprocessing:</b> I learned how to load and preprocess images which is an essential step in building machine learning models. I learned how to resize, recolor, and transform images to be readable data which can be inputted into the model.
+<br>
+<br>
+Model Architecture: I researched and implemented a Convolutional Neural Network (CNN) architecture, understanding the purpose and functionality of each layer. I decided on using a Sequential model as I believed that it would give me the most insight and opportunity to learn about the uses of each layer. This included convolutional layers for feature extraction, pooling layers for down-sampling, dense layers for classification, and activation functions for introducing non-linearity.
+<br>
+<br>
+Training Process: I learned how to compile and train the model using appropriate optimization algorithms, loss functions, and evaluation metrics. I also implemented callbacks for monitoring training progress and preventing overfitting.
+<br>
+<br>
+Model Evaluation: I evaluated the model's performance using accuracy and loss metrics on both training and validation datasets. This helped me understand the model's effectiveness and identify areas for improvement. I mostly used matplotlib and numpy to make charts to gauge the success of each of the metrics I changed.
+<br>
+<br>
+<strong>Data Visualization</strong>
+<br>
+Description: I visualized the distribution of images by ASL sign in the dataset. Using Matplotlib and Seaborn libraries, I created a bar plot showing the count of images for each ASL sign. This visualization helped me understand the dataset's composition and ensure that it was well-balanced across different signs.
+<br>
+Significance: Visualizing the data distribution is essential for understanding the dataset's characteristics. It ensures that the model training process is not biased towards certain signs due to imbalanced data, which could affect the model's performance.
+<br>
+<br>
+<b>Model Architecture</b>
+<br>
+Description: Here, I provided an overview of the model architecture used for ASL recognition. The architecture consists of convolutional layers followed by max-pooling layers for feature extraction and down-sampling. The flattened output is then fed into fully connected layers with ReLU activation functions for classification, followed by a softmax layer for multi-class classification.
+<br>
+Significance: Understanding the model architecture is crucial for designing an effective ASL recognition system. Each layer serves a specific purpose in extracting and transforming input data, ultimately leading to accurate predictions.
+<br>
+<br>
+<b>Training Progress</b>
+<div class="project-details__showcase-img-cont">
+  <img
+    src=".assets/jpeg/trainingModel.png"
+    alt="Project Image"
+    class="project-details__showcase-img"
+  />
+</div>
+
+Description: This section shows the training progress of the model over multiple epochs. Using training and validation accuracy and loss metrics, I monitored the model's performance during the training process. Early stopping and learning rate reduction callbacks were employed to prevent overfitting and improve convergence.
+<br>
+Significance: Tracking the training progress helps assess the model's convergence and performance over time. It allows for early detection of overfitting or underfitting issues and guides adjustments to hyperparameters or model architecture to optimize performance.
+<br>
+<br>
+<b>Model Evaluation</b>
+<br>
+Description: In this section, I evaluated the model's performance on both training and validation datasets. Using accuracy and loss metrics, I assessed the model's ability to correctly classify ASL signs. The evaluation provided insights into the model's effectiveness and generalization capability.
+<br>
+Significance: Model evaluation is critical for assessing its performance and identifying areas for improvement. By comparing training and validation metrics, I could detect potential issues such as overfitting or underfitting and adjust the model accordingly.
+<br>
+<br>
+<b>Future Work</b>
+<br>
+Description: Looking ahead, I plan to extend the project by implementing real-time ASL character recognition using a camera or video feed. This will involve integrating computer vision techniques to preprocess live video streams and applying the trained model for real-time prediction. Additionally, I aim to explore methods for improving the model's accuracy and efficiency in real-world scenarios.
+<br>
+Significance: Real-time ASL recognition has practical applications in assistive technology and human-computer interaction. By enabling users to interact with devices using sign language, it promotes accessibility and inclusivity for individuals with hearing impairments. Continuing to enhance the model's capabilities will contribute to advancing assistive technologies and improving communication accessibility.
+
               </p>
             </div>
             <div class="project-details__tools-used">
