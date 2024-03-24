@@ -47,7 +47,7 @@ a {
   color: inherit; }
 
 li {
-  list-style: none; }
+  list-style: disc; }
 
 input:focus,
 button:focus,
@@ -165,7 +165,9 @@ textarea {
     transform: translateY(-3px); }
   .btn--bg {
     padding: 1.5rem 8rem;
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin: 0 1rem; }
+    
   .btn--med {
     padding: 1.5rem 5rem;
     font-size: 1.6rem; }
@@ -557,12 +559,16 @@ textarea {
 .project-details__content2 {
   display: flex;
 }
+
 .project-details__showcase-img-cont {
   width: 100%;
   margin-bottom: 6rem; }
 .project-details__showcase-img-cont2 {
-  width: 25%;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
 
 .project-details__showcase-img {
   width: 100%; }
