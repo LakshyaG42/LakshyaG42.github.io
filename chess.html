@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CS 213 Chess Assignment</title>
+    <meta name="description" content="CS 213 Chess Assignment" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/john-doe.png"
+              alt="Lakshya Gour Image"
+              class="header__logo-img"
+            />`
+          </div>
+          <span class="header__logo-sub">Lakshya Gour</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#education" class="header__link"> Education </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#education"> Education </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">CS 213 Chess Assignment</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            This project is a chess game developed as a part of the CS 213 course at Rutgers University. The game is developed using Java and follows the standard rules of chess. The game includes features like castling, en passant, pawn promotion, and checkmate detection. The project aims to implement object-oriented programming concepts and enhance problem-solving skills through game development.
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="https://github.com/LakshyaG42/RUTrash" class="btn btn--bg" target="_blank">Github</a>
+          <a href="https://devpost.com/software/rutrash" class="btn btn--bg" target="_blank">DevPost</a>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <video width=100% height = 100% controls>
+              <source src= "assets\Demonstration.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h2 class="project-details__content-title">Introduction</h2>
+              <p class="project-details__desc-para">
+                RUTrash is a sustainable initiative developed with the goal of addressing environmental conservation challenges through innovative technology solutions. This project encompasses various functionalities, including trash type detection, carbon footprint calculation, and a climate expert chatbot powered by Cloudflare Workers AI API. In this detailed write-up, we'll delve into the development process, technologies used, challenges faced, accomplishments, and lessons learned throughout the creation of RUTrash.
+              </p>
+              <h3 class="project-details__content-heading">Inspiration and Objectives</h3>
+              <p class="project-details__desc-para">
+                The inspiration for RUTrash stems from the urgent need to tackle environmental issues, particularly in waste management and carbon emissions. The project aligns with the mission of the Rutgers Office of Climate Action, aiming to empower individuals to make environmentally conscious decisions in their daily lives. The key objectives of RUTrash are:
+                <ul class="project-details__desc-list">
+                  <li class = project-details__desc-list>Trash Type Detection: Enable users to identify and properly dispose of various types of waste through image analysis.</li>
+                  <li class = project-details__desc-list>Carbon Footprint Calculation: Provide users with insights into their environmental impact based on daily habits and activities.</li>
+                  <li class = project-details__desc-list>Climate Expert Chatbot: Engage users in conversations about climate sustainability and offer guidance on contributing to environmental protection.</li>
+                </ul>
+              </p>
+              <h2 class="project-details__content-title">Development Process</h2>
+              <h3 class="project-details__content-heading">Training MobileNetV2 on Kaggle's Garbage Classification Dataset</h3>
+              <p class="project-details__desc-para">
+                The development journey began with selecting a suitable dataset for garbage classification. The Kaggle dataset, known for its diversity and quality, was chosen. The dataset underwent preprocessing, including image resizing, normalization, and augmentation, to prepare it for training. MobileNetV2, a lightweight and efficient CNN architecture, was selected and trained using PyTorch and Torchvision libraries. Validation and fine-tuning were crucial steps to ensure the model's accuracy and generalization.
+              </p>
+              <img src="assets\jpeg\mobilenetv2.png" alt="MobileNetV2 Architecture" class= "project-details__showcase-img-cont2">
+              <h3 class="project-details__content-heading">Implementing the Application with Flask</h3>
+              <img src="assets\jpeg\Flask_logo.png" alt="MobileNetV2 Architecture" class= "project-details__showcase-img-cont2">
+              <p class="project-details__desc-para">
+                Flask, a Python web framework, was instrumental in building the backend of RUTrash. Flask facilitated image upload and processing for trash type detection, handled user inputs for carbon footprint calculation, and integrated seamlessly with Cloudflare Workers AI API for the climate expert chatbot. The Flask setup involved defining routes, endpoints, and backend processing logic to deliver a user-friendly and responsive application.
+              </p>
+              <h3 class="project-details__content-heading">Integration with Cloudflare Workers AI API</h3>
+              <p class="project-details__desc-para">
+                Cloudflare Workers AI API played a pivotal role in powering the Climate Expert Chatbot feature. Integration with the API involved understanding API documentation, handling API requests and responses, and ensuring smooth communication between Flask backend and the external AI service. This integration enriched the user experience by providing personalized guidance on climate sustainability.
+              </p>
+              <h2 class="project-details__content-title">Functionalities of RUTrash</h2>
+              
+              <ol class="project-details__desc-list"> 
+                <li class = project-details__desc-list>
+                  <h3 class="project-details__content-heading">Trash Type Detection</h3>
+                  <p class="project-details__desc-para"><strong>Description:</strong> Users can upload waste images for classification.</p>
+                  <p class="project-details__desc-para"><strong>Functionality:</strong> MobileNetV2 analyzes uploaded images to identify the type of trash.</p>
+                  <p class="project-details__desc-para"><strong>Response:</strong> Suggestions for appropriate disposal methods are provided based on the classification.</p>
+                  
+                </li>
+
+                <li class = project-details__desc-list>
+                  <h3 class="project-details__content-heading">Carbon Footprint Calculation</h3>
+                  <p class="project-details__desc-para"><strong>Description:</strong> Users input data related to daily habits impacting the environment.</p>
+                  <p class="project-details__desc-para"><strong>Functionality:</strong> Flask processes user inputs to calculate carbon footprint.</p>
+                  <p class="project-details__desc-para"><strong>Response:</strong> Users receive insights into their environmental impact, fostering awareness and sustainable practices.</p>
+                </li>
+                
+                <li class = project-details__desc-list>
+                  <img src="assets\jpeg\cloudflare_logo.png" alt="MobileNetV2 Architecture" class= "project-details__showcase-img-cont2">
+                  <h3 class="project-details__content-heading">Climate Expert Chatbot</h3>
+                  <p class="project-details__desc-para"><strong>Description:</strong> AI-powered chatbot engages users in climate sustainability conversations.</p>
+                  <p class="project-details__desc-para"><strong>Functionality:</strong> Cloudflare Workers AI API powers the chatbot, offering personalized guidance.</p>
+                  <p class="project-details__desc-para"><strong>Response:</strong> Users receive advice on contributing to environmental protection and adopting eco-friendly practices.</p>
+              </li>
+              </ol>
+              <h2 class="project-details__content-title">Challenges and Solutions</h2>
+              <h3 class="project-details__content-heading">Model Training Complexity</h3>
+              <p class="project-details__desc-para">Training MobileNetV2 for garbage classification within a limited timeframe posed challenges. Careful dataset selection, preprocessing, and model optimization strategies were employed to overcome these challenges.</p>
+              <h3 class="project-details__content-heading">API Integration</h3>
+              <p class="project-details__desc-para">Integrating Cloudflare Workers AI API required understanding API documentation and ensuring seamless communication. Close collaboration and testing were essential for successful integration.</p>
+              <h2 class="project-details__content-title">Accomplishments and Learnings</h2>
+              <h3 class="project-details__content-heading">Accomplishments</h3>
+              <ul class="project-details__desc-list">
+                  <li>Successful implementation of all planned functionalities, including trash type detection, carbon footprint calculation, and the Climate Expert Chatbot.</li>
+                  <li>Going beyond initial goals by adding extra features, showcasing dedication and problem-solving skills.</li>
+              </ul>
+              <h3 class="project-details__content-heading">Learnings</h3>
+              <ul class="project-details__desc-list">
+                  <li>Application of CNNs, Flask, HTML, and CSS for developing a fully functional and impactful application.</li>
+                  <li>Insights into AI integration, web development, and environmental sustainability, enriching the learning experience.</li>
+              </ul>
+              <h2 class="project-details__content-title">Future Enhancements</h2>
+              <ol class="project-details__desc-list">
+                  <li>Transforming the application into a versatile platform accessible across various devices for wider reach and usability.</li>
+                  <li>Enhancing the UI/UX of the webpage to improve user experience and engagement.</li>
+                  <li>Implementing a more robust CNN model for image classification to further enhance accuracy and reliability.</li>
+              </ol>
+              <h2 class="project-details__content-title">Conclusion</h2>
+              <p class="project-details__desc-para">RUTrash exemplifies a comprehensive approach to addressing environmental conservation through technology. The integration of AI, Flask development, and API integration has resulted in a powerful platform that empowers users to make informed decisions and contribute to a more sustainable future.</p>
+            </div> 
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">Flask</div>
+                <div class="skills__skill">Cloudflare Workers AI API</div>
+                <div class="skills__skill">GIT</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">Pytorch</div>
+                <div class="skills__skill">torchvision</div>
+                <div class="skills__skill"></div>
+              </div>
+            </div>
+            <!--
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See Live</h3>
+              <a
+                href="#"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Live Link</a
+              >
+              <a
+                href="#"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Code Link</a
+              >
+            </div>
+            -->
+            <div class="project-details__links">
+              <a
+                href="https://github.com/LakshyaG42/RUTrash"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Github</a
+              >
+              <a
+                href="https://devpost.com/software/rutrash"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >DevPost</a
+              >
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lakshya-gour/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/LakshyaG42?tab=repositories">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Lakshya Gour</h4>
+            <p class="main-footer__short-desc">
+              Thank you for checking out my website. <br>I put a lot of work into it and I appreciate you checking it out!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
