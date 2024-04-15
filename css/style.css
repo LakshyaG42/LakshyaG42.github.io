@@ -165,7 +165,9 @@ textarea {
     transform: translateY(-3px); }
   .btn--bg {
     padding: 1.5rem 8rem;
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin: 0 1rem; }
+    
   .btn--med {
     padding: 1.5rem 5rem;
     font-size: 1.6rem; }
@@ -484,7 +486,7 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(0, 28, 185, 0.473), rgba(90, 71, 175, 0.493));
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -509,6 +511,34 @@ textarea {
   .project-cs-hero__cta {
     margin-top: 5rem;
     text-align: center; }
+.project-cs-hero-asl {
+  color: #fff;
+  background: linear-gradient(to right, rgba(0, 28, 185, 0.473), rgba(90, 71, 175, 0.493)), url(../../assets/jpeg/ASLbackground.png);
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .project-cs-hero-asl {
+      height: unset;
+      min-height: unset; } }
+  .project-cs-hero-asl__content {
+    padding: 25rem 0 17rem 0;
+    max-width: 90rem;
+    width: 92%;
+    margin: auto; }
+    @media only screen and (max-width: 37.5em) {
+      .project-cs-hero-asl__content {
+        padding: 19rem 0 13rem 0;
+        margin: auto;
+        position: static;
+        transform: translate(0, 0); } }
+  .project-cs-hero-asl__info {
+    margin: 3rem auto 0 auto;
+    max-width: 80rem; }
+  .project-cs-hero-asl__cta {
+    margin-top: 5rem;
+    text-align: center; }
+    
 
 .project-details__content {
   padding: 8rem 0;
@@ -526,10 +556,19 @@ textarea {
     font-size: 2.5rem;
     margin-bottom: 2.8rem; }
                   
+.project-details__content2 {
+  display: flex;
+}
 
 .project-details__showcase-img-cont {
   width: 100%;
   margin-bottom: 6rem; }
+.project-details__showcase-img-cont2 {
+  margin-bottom: 6rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
 
 .project-details__showcase-img {
   width: 100%; }
@@ -546,6 +585,17 @@ textarea {
     line-height: 1.7;
     color: grey;
     margin-bottom: 2rem; }
+  .project-details__desc-list {
+      font-size: 1.8rem;
+      line-height: 1.7;
+      color: rgb(0, 0, 0);
+      margin-bottom: 2rem; 
+      list-style: disc;
+      padding-left: 2rem;
+    }
+  .project-details__desc-list li::marker {
+      color: #221b1b; /* Change the color of the bullet point */
+    }
 
 .project-details__tools-used {
   margin: 0 0 7rem 0; }
@@ -744,6 +794,35 @@ textarea {
       .main-footer__lower {
         padding: 3.5rem 0; } }
 
+
+
+.codebox-container {
+  position: relative;
+}
+
+.codebox {
+  border: 1px solid #fafcff; 
+  background-color: #292c31; 
+  color: #ffffff; 
+  white-space: pre-line;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 14px; 
+  display: inline-block;
+  border-radius: 5px; 
+}
+
+.codebox-container::before {
+  content: "Code:";
+  position: absolute;
+  top: -10px; 
+  left: 10px; 
+  background-color: #4d5b6b; 
+  color: #ffffff; 
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
 .skills {
   display: flex;
   flex-wrap: wrap; }
