@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Application Tracker</title>
+    <meta name="description" content="This is a simple application tracker to help keep track of job applications." />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/john-doe.png"
+              alt="Lakshya Gour Image"
+              class="header__logo-img"
+            />`
+          </div>
+          <span class="header__logo-sub">Lakshya Gour</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#education" class="header__link"> Education </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#education"> Education </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Application Tracker</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            A project to help me stay organized which fits my custom needs.
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="https://github.com/LakshyaG42/ApplicationTracker" class="btn btn--bg" target="_blank">Github</a>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <video width=100% height = 100% controls>
+              <source src= "assets\videos\ApplicationTracker_Mk1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            
+            </video>
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Introduction</h3>
+              <p class="project-details__desc-para">
+                My journey in creating the "Application Tracker" application has been both challenging and rewarding. I embarked on
+                  this project to solve a personal need of efficiently managing job applications and tracking their progress. Along the
+                  way, I learned valuable lessons, experimented with new technologies, and gained insights into application development.
+              </p>
+              <h3 class="project-details__content-title">Technologies Used</h3>
+              <ul class="project-details__desc-list">
+                  <li class="project-details__desc-list">Frontend: React.js, Bootstrap, Axios for API requests</li>
+                  <li class="project-details__desc-list">Backend: Node.js with Express.js for API development</li>
+                  <li class="project-details__desc-list">Database: MongoDB for data storage</li>
+                  <li class="project-details__desc-list">Deployment: Local deployment for development (MongoDB installed locally), future plans for cloud deployment</li>
+              </ul>
+              <h3 class="project-details__content-title">Key Features Implemented:</h3>
+              <ol class="project-details__desc-list">
+                <li class="project-details__desc-list">Adding Applications: Implemented a form to add new applications with relevant details like company name, position, and application date.</li>
+                <li class="project-details__desc-list">Status Tracking: Integrated status tracking for each application, allowing users to update statuses like applied, interview scheduled, offer received, rejected, etc.</li>
+                <li class="project-details__desc-list">Reminders and Notifications: Planned future feature for setting reminders for follow-ups and interviews, enhancing user productivity.</li>
+                <li class="project-details__desc-list">Dashboard Summary: Implemented a dashboard to provide a summary of application history and status, including current application statistics.</li>
+                <li class="project-details__desc-list">Database Integration: Established a MongoDB database for efficient data storage and retrieval, ensuring scalability and performance.</li>
+              </ol>
+              <h3 class="project-details__content-title">Learning Experience</h3>
+                <p class="project-details__desc-para">
+                  One of the major decisions in the development process was the choice of Bootstrap for the UI elements. This decision was driven by my desire to create a responsive and visually appealing user interface without spending too much time on custom styling. Bootstrap provided a robust framework that allowed me to quickly implement a clean and consistent design across the application.
+                </p>
+                <p class="project-details__desc-para">
+                  Another significant learning experience came from integrating MongoDB as the database for my application. Through this process, I gained a deeper understanding of database management, including setting up the database, performing CRUD operations, and ensuring data consistency. MongoDB's flexibility and scalability were crucial in building a system that could handle varying amounts of data and user interactions efficiently.
+                </p>
+                <p class="project-details__desc-para">
+                  My aim was to create a scalable application that could grow with additional features and an increasing user base. This led me to focus on writing modular and maintainable code, optimizing performance, and planning for future enhancements. One such planned feature is the integration of Google Calendar to remind users to follow up on certain applications, ensuring they stay on top of their job search process.
+                </p>
+                <p class="project-details__desc-para">
+                  Throughout this journey, I learned a lot about full-stack development. On the frontend, I honed my skills in React.js, managing state, and handling API requests to create a smooth user experience. On the backend, I delved into Node.js and Express.js to build RESTful APIs, which taught me the importance of robust API design and error handling.
+                </p>
+                <p class="project-details__desc-para">
+                  Overall, this project has been a significant learning experience, providing me with practical skills in modern web development. As I continue to work on this application, I plan to add more features, improve the user interface, and optimize the performance. Engaging with the developer community, seeking feedback, and staying updated with emerging technologies will be essential in my ongoing development journey.
+                </p>
+              <h3 class="project-details__content-title">Future Plans</h3>
+              <ul class="project-details__desc-list">
+                <li class="project-details__desc-list">Cloud Deployment: Plan to deploy the application on cloud platforms like Heroku or AWS for accessibility from anywhere.</li>
+                <li class="project-details__desc-list">Enhanced Notifications: Implement real-time notifications and reminders using technologies like WebSockets or scheduled tasks.</li>
+                <li class="project-details__desc-list">User Authentication: Introduce user authentication and authorization for secure access and data privacy.</li>
+                <li class="project-details__desc-list">Data Analytics: Incorporate data analytics features to provide insights into application trends and success rates.</li>
+                <li class="project-details__desc-list">Mobile Compatibility: Optimize the application for mobile devices to cater to a wider user base.</li>
+              </ul>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">Javascript</div>
+                <div class="skills__skill">React</div>
+                <div class="skills__skill">GIT</div>
+                <div class="skills__skill">Node.js</div>
+                <div class="skills__skill">Express.js</div>
+                <div class="skills__skill">MongoDB</div>
+                <div class="skills__skill">Axios</div>
+                <div class="skills__skill">Bootstrap</div>
+                <div class="skills__skill"></div>
+              </div>
+            </div>
+            <!--
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See Live</h3>
+              <a
+                href="#"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Live Link</a
+              >
+              <a
+                href="#"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Code Link</a
+              >
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lakshya-gour/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/LakshyaG42?tab=repositories">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Lakshya Gour</h4>
+            <p class="main-footer__short-desc">
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
