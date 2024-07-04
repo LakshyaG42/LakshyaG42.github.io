@@ -265,7 +265,7 @@ textarea {
     text-align: center; }
 
 .about {
-  background: #fafafa; }
+  background: #e7e7e7; }
   .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -358,6 +358,9 @@ textarea {
         margin-bottom: 4rem; }
 
       
+.projects {
+  background: #e7e7e7;
+}
 
 .projects__row {
   display: grid;
@@ -654,7 +657,7 @@ textarea {
   width: 100%;
   z-index: 1000;
   background: #000;
-  background: #350651;
+  background: #0f2051;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); }
   .header__content {
     display: flex;
