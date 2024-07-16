@@ -165,6 +165,7 @@ textarea {
     transform: translateY(-3px); }
   .btn--bg {
     padding: 1.5rem 8rem;
+    
     font-size: 2rem;
     margin: 0 1rem; }
     
@@ -503,7 +504,11 @@ textarea {
     padding: 25rem 0 17rem 0;
     max-width: 90rem;
     width: 92%;
-    margin: auto; }
+    margin: auto;
+    }
+    .project-cs-hero__content--panel-open {
+      padding-bottom: 3rem;
+    }
     @media only screen and (max-width: 37.5em) {
       .project-cs-hero__content {
         padding: 19rem 0 13rem 0;
@@ -746,6 +751,7 @@ textarea {
       @media only screen and (max-width: 37.5em) {
         .header__sm-menu--active {
           visibility: visible;
+          color: white;
           opacity: 1; } }
   .header__sm-menu-link a {
     display: block;
@@ -753,8 +759,9 @@ textarea {
     padding: 2.5rem 3rem;
     font-size: 1.6rem;
     color: #fff;
+    background: #0f2051;
     text-align: right;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #000000;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -762,7 +769,7 @@ textarea {
     .header__sm-menu-link a:hover {
       color: #0062b9; }
   .header__sm-menu-link:first-child a {
-    border-top: 1px solid #eee; }
+    border-top: 1px solid #000000; }
   .header__sm-menu-link-last {
     border-bottom: 0; }
 
@@ -890,3 +897,44 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+
+
+/* Feature Updates List for projects */
+.feature-updates__panel {
+  padding: 2rem;
+  transition: all .3s;
+  max-height: 0rem;
+}
+
+.feature-updates__panel--active {
+  background: #0f2051;
+  max-height: 100rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all .3s;
+}
+
+
+.feature-updates__link {
+  padding: 2.2rem 3rem;
+    display: none;
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color .3s;
+}
+  .feature-updates__link:hover {
+    color: #0062b9;
+  }
+  .feature-updates__link--active {
+    display: block;
+  }
+/* END Feature Updates List for projects */

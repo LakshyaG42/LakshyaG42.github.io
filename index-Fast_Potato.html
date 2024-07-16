@@ -17,6 +17,15 @@
     />
   </head>
   <body>
+    <script>
+      function sendGAEvent(linkName) {
+          gtag('event', 'click', {
+              'event_category': 'Navigation',
+              'event_label': linkName,
+              'value': linkName
+          });
+      }
+    </script>
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
@@ -482,14 +491,14 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lakshya-gour/">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lakshya-gour/" onclick="sendGAEvent('LinkedinFooter')">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="https://github.com/LakshyaG42?tab=repositories">
+              <a target="_blank" rel="noreferrer" href="https://github.com/LakshyaG42 onclick="sendGAEvent('GithubFooter')">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"

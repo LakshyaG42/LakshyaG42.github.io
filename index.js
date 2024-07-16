@@ -36,3 +36,18 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+function toggleFeatureUpdates() {
+  const panel = document.getElementById('featureUpdatesPanel');
+  panel.classList.toggle('feature-updates__panel');
+  panel.classList.toggle('feature-updates__panel--active');
+
+
+  const links = panel.querySelectorAll('.feature-updates__link');
+  links.forEach(link => {
+    link.classList.toggle('feature-updates__link--active');
+  });
+
+  const content = document.querySelector('.project-cs-hero__content');
+  content.classList.toggle('project-cs-hero__content--panel-open');
+}

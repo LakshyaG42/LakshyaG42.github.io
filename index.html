@@ -26,6 +26,15 @@
     </script>
   </head>
   <body>
+    <script>
+      function sendGAEvent(linkName) {
+          gtag('event', 'click', {
+              'event_category': 'Navigation',
+              'event_label': linkName,
+              'value': linkName
+          });
+      }
+    </script>
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
@@ -41,23 +50,24 @@
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
+              <a href="./index.html" class="header__link" onclick="sendGAEvent('HomeFromHeader')"> Home </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
+              <a href="./index.html#about" class="header__link" onclick="sendGAEvent('AboutFromHeader')">About </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#education" class="header__link">Education </a>
+              <a href="./index.html#education" class="header__link" onclick="sendGAEvent('EducationFromHeader')">Education </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
+              <a href="./index.html#projects" class="header__link" onclick="sendGAEvent('ProjectsFromHeader')">
                 Projects
               </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
+              <a href="./index.html#contact" class="header__link" onclick="sendGAEvent('ContactFromHeader')"> Contact </a>
             </li>
           </ul>
+          
           <div class="header__main-ham-menu-cont">
             <img
               src="./assets/svg/ham-menu.svg"
@@ -76,19 +86,23 @@
         <div class="header__sm-menu-content">
           <ul class="header__sm-menu-links">
             <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
+              <a href="./index.html" onclick="sendGAEvent('HomeFromSmallMenu')"> Home </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
+              <a href="./index.html#about" onclick="sendGAEvent('AboutFromSmallMenu')"> About </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
+              <a href="./index.html#education" onclick="sendGAEvent('EducationFromSmallMenu')"> Education </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
+              <a href="./index.html#projects" onclick="sendGAEvent('ProjectsFromSmallMenu')"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact" onclick="sendGAEvent('ContactFromSmallMenu')"> Contact </a>
             </li>
           </ul>
         </div>
@@ -102,12 +116,12 @@
    I invite you to explore my journey at the crossroads of computer science, mathematics, and creative innovation.
         </div>
         <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
+          <a href="./#projects" class="btn btn--bg" onclick="sendGAEvent('ProjectsFromMain')">Projects</a>
         </div>
       </div>
       <div class="home-hero__socials">
         <div class="home-hero__social">
-          <a href="https://www.linkedin.com/in/lakshya-gour/" class="home-hero__social-icon-link">
+          <a href="https://www.linkedin.com/in/lakshya-gour/" class="home-hero__social-icon-link" onclick="sendGAEvent('Linkedin')">
             <img
               src="./assets/png/linkedin-ico.png"
               alt="icon"
@@ -117,7 +131,7 @@
         </div>
         
         <div class="home-hero__social">
-          <a href="https://github.com/LakshyaG42?tab=repositories" class="home-hero__social-icon-link">
+          <a href="https://github.com/LakshyaG42?tab=repositories" class="home-hero__social-icon-link" onclick="sendGAEvent('Github')">
             <img
               src="./assets/png/github-ico.png"
               alt="icon"
@@ -242,6 +256,30 @@
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
+                src="./assets/jpeg/ApplicationTrackerPhoto.png"
+                style = "border: 3px solid #000000;"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Application Tracker</h3>
+              <p class="projects__row-content-desc">
+                This is a project that I made in order to help me stay organized when it comes to applying for internships. I plan on implementing a system of parsing through emails using Natural Language Processing to handle status changes.
+              </p>
+              <a
+                href="./application-tracker.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                onclick="sendGAEvent('ApplicationTracker')"
+                >Learn More</a
+              >
+            </div>
+          </div>
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
                 src="./assets/jpeg/Construction.png"
                 style = "border: 3px solid #000000;"
                 alt="Software Screenshot"
@@ -261,6 +299,32 @@
               >
             </div>
           </div>
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/prosperity.jpg"
+                style = "border: 3px solid #000000;"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">IMC Prosperity: Trading competition</h3>
+              <p class="projects__row-content-desc">
+                This was a compeition I participated in to learn more about algorithmic trading to pursue passion for probability and to apply the skills I learned through my education in Computer Science and Mathematics.
+              </p>
+              <a
+                href="./imc_prosperity_2024.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                onclick="sendGAEvent('IMCProsperity')"
+                >Learn More</a
+              >
+            </div>
+          </div>
+
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
@@ -283,51 +347,7 @@
               >
             </div>
           </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/ApplicationTrackerPhoto.png"
-                style = "border: 3px solid #000000;"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy">
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Application Tracker</h3>
-              <p class="projects__row-content-desc">
-                This is a project that I made in order to help me stay organized when it comes to applying for internships. I plan on implementing a system of parsing through emails using Natural Language Processing to handle status changes.
-              </p>
-              <a
-                href="./application-tracker.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Learn More</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/prosperity.jpg"
-                style = "border: 3px solid #000000;"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">IMC Prosperity: Trading competition</h3>
-              <p class="projects__row-content-desc">
-                This was a compeition I participated in to learn more about algorithmic trading to pursue passion for probability and to apply the skills I learned through my education in Computer Science and Mathematics.
-              </p>
-              <a
-                href="./imc_prosperity_2024.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Learn More</a
-              >
-            </div>
-          </div>
+
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <video width=100% height = 100% controls>
@@ -344,6 +364,7 @@
                 href="./RUTrash.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
+                onclick="sendGAEvent('RUTrash')"
                 >Learn More</a
               >
             </div>
@@ -366,6 +387,7 @@
                   href="./chess.html"
                   class="btn btn--med btn--theme dynamicBgClr"
                   target="_blank"
+                  onclick="sendGAEvent('Chess')"
                   >Learn More</a
                 >
               </div>
@@ -389,6 +411,7 @@
                 href="./winlab-project.html" 
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
+                onclick="sendGAEvent('WinlabProject')"
                 >Learn More</a
               >
             </div>
@@ -414,6 +437,7 @@
                 href="./option-pricer.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
+                onclick="sendGAEvent('OptionPricer')"
                 >Learn More</a
               >
             </div>
@@ -436,6 +460,7 @@
                 href="./asl-reader.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
+                onclick="sendGAEvent('ASLReader')"
                 >Learn More</a
               >
             </div>
@@ -458,6 +483,7 @@
                 href="./scheduling-extension.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
+                onclick="sendGAEvent('SchedulingExtension')"
                 >Learn More</a
               >
             </div>
@@ -482,6 +508,7 @@
                 href="./ResearchPaper1.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
+                onclick="sendGAEvent('ResearchPaper1')"
                 >Learn More</a
               >
             </div>            
@@ -602,14 +629,14 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lakshya-gour/">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lakshya-gour/" onclick="sendGAEvent('LinkedinFooter')">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="https://github.com/LakshyaG42?tab=repositories">
+              <a target="_blank" rel="noreferrer" href="https://github.com/LakshyaG42" onclick="sendGAEvent('GithubFooter')">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"

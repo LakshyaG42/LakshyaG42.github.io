@@ -17,6 +17,15 @@
     />
   </head>
   <body>
+    <script>
+      function sendGAEvent(linkName) {
+          gtag('event', 'click', {
+              'event_category': 'Navigation',
+              'event_label': linkName,
+              'value': linkName
+          });
+      }
+    </script>
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
@@ -32,21 +41,21 @@
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
+              <a href="./index.html" class="header__link" onclick="sendGAEvent('HomeFromHeader')"> Home </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
+              <a href="./index.html#about" class="header__link" onclick="sendGAEvent('AboutFromHeader')">About </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#education" class="header__link"> Education </a>
+              <a href="./index.html#education" class="header__link" onclick="sendGAEvent('EducationFromHeader')">Education </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
+              <a href="./index.html#projects" class="header__link" onclick="sendGAEvent('ProjectsFromHeader')">
                 Projects
               </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
+              <a href="./index.html#contact" class="header__link" onclick="sendGAEvent('ContactFromHeader')"> Contact </a>
             </li>
           </ul>
           <div class="header__main-ham-menu-cont">
@@ -65,25 +74,25 @@
       </div>
       <div class="header__sm-menu">
         <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
+         <ul class="header__sm-menu-links">
             <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
+              <a href="./index.html" onclick="sendGAEvent('HomeFromSmallMenu')"> Home </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#education"> Education </a>
+              <a href="./index.html#about" onclick="sendGAEvent('AboutFromSmallMenu')"> About </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
+              <a href="./index.html#education" onclick="sendGAEvent('EducationFromSmallMenu')"> Education </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
+              <a href="./index.html#projects" onclick="sendGAEvent('ProjectsFromSmallMenu')"> Projects </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
+              <a href="./index.html#contact" onclick="sendGAEvent('ContactFromSmallMenu')"> Contact </a>
             </li>
           </ul>
         </div>
@@ -182,14 +191,14 @@ Designing an intuitive and user-friendly interface for the extension improved my
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lakshya-gour/">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lakshya-gour/" onclick="sendGAEvent('LinkedinFooter')">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="https://github.com/LakshyaG42?tab=repositories">
+              <a target="_blank" rel="noreferrer" href="https://github.com/LakshyaG42 onclick="sendGAEvent('GithubFooter')">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
