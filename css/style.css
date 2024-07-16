@@ -301,7 +301,9 @@ textarea {
   height: 100vh;
   min-height: 50rem;
   max-height: 70rem; 
-  position: relative;}
+  position: relative;
+  overflow:auto;
+  }
   .education__heading {
     display: block;
     color: #fff;
@@ -329,6 +331,9 @@ textarea {
       font-size: 2.8rem;
       margin-bottom: 3rem; }
       @media only screen and (max-width: 37.5em) {
+        .education__content {
+          max-height: fit-content;}
+
         .education__content-title {
           font-size: 2.4rem; } }
     .education__content-details {
@@ -339,6 +344,7 @@ textarea {
       margin-bottom: 3rem; }
       @media only screen and (max-width: 37.5em) {
         .education__content-details {
+          max-height: fit-content;
           text-align: center;
           font-size: 2.4rem; } }
     .education__content-img {
