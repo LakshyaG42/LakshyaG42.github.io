@@ -161,17 +161,22 @@ textarea {
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
+  
   .btn:hover {
     transform: translateY(-3px); }
   .btn--bg {
-    padding: 1.5rem 8rem;
+    padding: 1.5rem 6rem;
     
     font-size: 2rem;
     margin: 0 1rem; }
-    
+  .btn--icon {
+    width: 2.5rem;
+    display: inline-block;
+    vertical-align: middle; }
   .btn--med {
     padding: 1.5rem 5rem;
-    font-size: 1.6rem; }
+    font-size: 1.6rem; 
+    margin: 0 1rem;}
   .btn--theme {
     background: #0062b9;
     color: #fff; }
@@ -649,8 +654,18 @@ textarea {
 
 .project-details__links {
   margin: 0 0; }
+  .project-details__links-list{
+    display:flex;
+    box-sizing: border-box;
+  }
+  .project-details__links-item {
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+  }
   .project-details__links-btn {
-    margin-right: 2rem; }
+    margin: 2rem; 
+    padding: auto;}
+  
     @media only screen and (max-width: 37.5em) {
       .project-details__links-btn {
         margin-right: 0;

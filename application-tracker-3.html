@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3264RQMXK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-K3264RQMXK');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Application Tracker Update: Sorting and Filtering</title>
+    <meta name="description" content="Update 2: Sorting and Filtering options in the Application Tracker." />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script>
+      function sendGAEvent(linkName) {
+          gtag('event', 'click', {
+              'event_category': 'Navigation',
+              'event_label': linkName,
+              'value': linkName
+          });
+      }
+    </script>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/john-doe.png"
+              alt="Lakshya Gour Image"
+              class="header__logo-img"
+            />`
+          </div>
+          <span class="header__logo-sub">Lakshya Gour</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./" class="header__link" onclick="sendGAEvent('HomeFromHeader')"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#about" class="header__link" onclick="sendGAEvent('AboutFromHeader')">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#education" class="header__link" onclick="sendGAEvent('EducationFromHeader')">Education </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#projects" class="header__link" onclick="sendGAEvent('ProjectsFromHeader')">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#contact" class="header__link" onclick="sendGAEvent('ContactFromHeader')"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+         <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./" onclick="sendGAEvent('HomeFromSmallMenu')"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#about" onclick="sendGAEvent('AboutFromSmallMenu')"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#education" onclick="sendGAEvent('EducationFromSmallMenu')"> Education </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#projects" onclick="sendGAEvent('ProjectsFromSmallMenu')"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#contact" onclick="sendGAEvent('ContactFromSmallMenu')"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Application Tracker Version 0.2.0</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+           I have added a few new features and improvements to the Application Tracker application. Feel free to explore the updates and provide feedback on the changes. Happy tracking!
+          </p>
+          
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="https://github.com/LakshyaG42/ApplicationTracker" class="btn btn--bg" target="_blank" onclick="sendGAEvent('ApplicationTrackerGithub')">Github</a>
+          <a href="https://www.lakshyagour.com/ApplicationTracker" class="btn btn--bg" target="_blank" onclick="sendGAEvent('ApplicationTrackerProb')">Live</a>
+          <button class="btn btn--bg" onclick="toggleFeatureUpdates(); sendGAEvent('UpdatesClicked')">Updates</button>
+          <br></br>
+          <div class="feature-updates__panel" id="featureUpdatesPanel">
+            <a href="./application-tracker" class="feature-updates__link">Status Update 1: Storing Applications</a>
+            <a href="./application-tracker-2" class="feature-updates__link">Status Update 2: Sorting and Filtering</a>
+            <a href="./application-tracker-2" class="feature-updates__link">Status Update 3: Google Login and Login System</a>
+            <a href="./application-tracker-2" class="feature-updates__link">Status Update 4: Moving to MongoDB Atlas and First Deployment</a>
+            <a href="./application-tracker-2" class="feature-updates__link">Status Update 5: Application Notes</a>
+            <!-- Add more links as needed -->
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <video width=100% height = 100% controls>
+              <source src= "assets\videos\ApplicationTracker_Mk1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            
+            </video>
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Introduction</h3>
+              <p class="project-details__desc-para">
+                In this update, I implemented sorting and filtering options for job applications. Users can now organize their applications based on various criteria, making it easier to navigate and manage their job search process. These features enhance the user experience by providing flexibility and customization in viewing and tracking applications. 
+              </p>
+              <h3 class="project-details__content-title">Key Features Implemented:</h3>
+              <ol class="project-details__desc-list">
+                <li class="project-details__desc-list">Sorting: Users can sort applications by date, company name, position, and status.</li>
+                <li class="project-details__desc-list">Filtering: Users can filter applications based on status, such as applied, interview scheduled, offer received, rejected, etc.</li>
+              </ol>
+              <h3 class="project-details__content-title">Learning Experience</h3>
+                <p class="project-details__desc-para">
+                  Implementing sorting and filtering required a deep dive into state management in React.js. I learned how to efficiently handle large data sets and ensure smooth user interactions by optimizing the rendering process.
+                </p>
+                <p class="project-details__desc-para">
+                  The backend integration was equally challenging as it involved creating robust APIs to handle dynamic queries. This experience enhanced my understanding of query optimization and effective database management.
+                </p>
+              <h3 class="project-details__content-title">Technologies Used</h3>
+              <ul class="project-details__desc-list">
+                  <li class="project-details__desc-list">Frontend: React.js, Bootstrap, Axios for API requests</li>
+                  <li class="project-details__desc-list">Backend: Node.js with Express.js for API development</li>
+                  <li class="project-details__desc-list">Database: MongoDB for data storage</li>
+                  <li class="project-details__desc-list">Deployment: Local deployment for development (MongoDB installed locally), future plans for cloud deployment</li>
+              </ul>
+              <h3 class="project-details__content-title">Future Plans</h3>
+              <ul class="project-details__desc-list">
+                <li class="project-details__desc-list">Cloud Deployment: Plan to deploy the application on cloud platforms like Heroku or AWS for accessibility from anywhere.</li>
+                <li class="project-details__desc-list">Enhanced Notifications: Implement real-time notifications and reminders using technologies like WebSockets or scheduled tasks.</li>
+                <li class="project-details__desc-list">User Authentication: Introduce user authentication and authorization for secure access and data privacy.</li>
+                <li class="project-details__desc-list">Data Analytics: Incorporate data analytics features to provide insights into application trends and success rates.</li>
+                <li class="project-details__desc-list">Mobile Compatibility: Optimize the application for mobile devices to cater to a wider user base.</li>
+                <li class="project-details__desc-list">Feedback Mechanism: Integrate feedback forms and user surveys to gather insights for further improvements.</li>
+                <li class="project-details__desc-list">Advanced Filtering: Adding more advanced filtering options such as date ranges and multiple criteria</li>
+              </ul>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Technologies Used</h3>
+              <div class="skills">
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">Javascript</div>
+                <div class="skills__skill">React</div>
+                <div class="skills__skill">GIT</div>
+                <div class="skills__skill">Node.js</div>
+                <div class="skills__skill">Express.js</div>
+                <div class="skills__skill">MongoDB</div>
+                <div class="skills__skill">Axios</div>
+                <div class="skills__skill">Bootstrap</div>
+                <div class="skills__skill"></div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">Useful Links</h3>
+              <ul class="project-details__links-list">
+                <li class="project-details__links-item">
+                  <a href="https://github.com/LakshyaG42/ApplicationTracker" target="_blank" class="project-details__links-link" onclick="sendGAEvent('ApplicationTrackerGithub')">
+                    <span class="project-details__links-text">View on GitHub</span>
+                    <img src="assets/svg/EXTERNAL.svg" alt="external link" class="project-details__links-icon" />
+                  </a>
+                </li>
+                <li class="project-details__links-item">
+                  <a href="https://www.lakshyagour.com/ApplicationTracker" target="_blank" class="project-details__links-link" onclick="sendGAEvent('ApplicationTrackerProb')">
+                    <span class="project-details__links-text">Live Demo</span>
+                    <img src="assets/svg/EXTERNAL.svg" alt="external link" class="project-details__links-icon" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lakshya-gour/" onclick="sendGAEvent('LinkedinFooter')">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/LakshyaG42 onclick="sendGAEvent('GithubFooter')">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Lakshya Gour</h4>
+            <p class="main-footer__short-desc">
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
