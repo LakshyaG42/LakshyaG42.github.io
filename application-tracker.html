@@ -123,9 +123,9 @@
         <div class="feature-updates__panel" id="featureUpdatesPanel">
           <a href="./application-tracker" class="feature-updates__link">Status Update 1: Storing Applications</a>
           <a href="./application-tracker-2" class="feature-updates__link">Status Update 2: Sorting and Filtering</a>
-          <a href="./application-tracker-2" class="feature-updates__link">Status Update 3: Google Login and Login System</a>
-          <a href="./application-tracker-2" class="feature-updates__link">Status Update 4: Moving to MongoDB Atlas and First Deployment</a>
-          <a href="./application-tracker-2" class="feature-updates__link">Status Update 5: Application Notes</a>
+          <a href="./application-tracker-3" class="feature-updates__link">Status Update 3: Google Login and Login System</a>
+          <a href="./application-tracker-4" class="feature-updates__link">Status Update 4: Moving to MongoDB Atlas and First Deployment</a>
+          <a href="./application-tracker-5" class="feature-updates__link">Status Update 5: Application Notes</a>
           <!-- Add more links as needed -->
         </div>
       </div>
@@ -204,6 +204,22 @@
                 <div class="skills__skill"></div>
               </div>
             </div>
+            <div class="project-details__links">
+              <ul class="project-details__links-list">
+                <li class="project-details__links-item">
+                  <a href="https://github.com/LakshyaG42/ApplicationTracker" target="_blank" class="btn btn--med btn--theme project-details__links-btn" onclick="sendGAEvent('ApplicationTrackerGithub')">
+                    <span class="project-details__links-text">View on GitHub</span>
+                    <img src="assets/svg/external_link.svg" alt="external link" class="btn--icon" />
+                  </a>
+                </li>
+                <li class="project-details__links-item">
+                  <a href="https://www.lakshyagour.com/ApplicationTracker" target="_blank" class="btn btn--med btn--theme project-details__links-btn" onclick="sendGAEvent('ApplicationTrackerProb')">
+                    <span class="project-details__links-text">Live Demo</span>
+                    <img src="assets/svg/external_link.svg" alt="external link" class="btn--icon" />
+                  </a>
+                </li>
+              </ul>
+            </div>
             <!--
             <div class="project-details__links">
               <h3 class="project-details__content-title">See Live</h3>
@@ -240,7 +256,7 @@
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="https://github.com/LakshyaG42 onclick="sendGAEvent('GithubFooter')">
+              <a target="_blank" rel="noreferrer" href="https://github.com/LakshyaG42" onclick="sendGAEvent('GithubFooter')">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
