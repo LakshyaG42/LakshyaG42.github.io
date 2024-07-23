@@ -251,7 +251,7 @@ textarea {
   .home-hero__social-icon {
     width: 100%; }
   .home-hero__content {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -263,12 +263,17 @@ textarea {
         margin: auto;
         position: static;
         transform: translate(0, 0); } }
+    .home-hero__content--panel-open {
+          margin-top: 3rem; }
+    
   .home-hero__info {
     margin: 3rem auto 0 auto;
     max-width: 80rem; }
   .home-hero__cta {
     margin-top: 5rem;
-    text-align: center; }
+    text-align: center; 
+  }
+  
 
 .about {
   background: #e7e7e7; }
@@ -959,3 +964,34 @@ textarea {
     display: block;
   }
 /* END Feature Updates List for projects */
+/* Demo Links Accordian */
+.demo-links-accordion {
+  display: none;
+  margin-top: 1rem;
+  max-height: 100px; /* Set a maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  width: 100%;
+  padding: 10px;
+}
+
+.demo-links-accordion .btn--med {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  background-color: #2658b4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: transform .3s;
+  
+}
+
+.demo-links-accordion .btn--med:hover {
+  background-color: #1530c7;
+  transform: translateY(-3px);
+}
+/* END Demo Links Accordian */

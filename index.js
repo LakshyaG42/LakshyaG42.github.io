@@ -51,3 +51,12 @@ function toggleFeatureUpdates() {
   const content = document.querySelector('.project-cs-hero__content');
   content.classList.toggle('project-cs-hero__content--panel-open');
 }
+
+function toggleDemoLinks() {
+  var demoLinks = document.querySelector('.demo-links-accordion');
+  if (demoLinks.style.display === 'none' || demoLinks.style.display === '') {
+    demoLinks.style.display = 'block';
+  } else {
+    demoLinks.style.display = 'none';
+  }
+}
