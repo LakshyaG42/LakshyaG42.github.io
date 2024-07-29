@@ -53,10 +53,16 @@ function toggleFeatureUpdates() {
 }
 
 function toggleDemoLinks() {
+  // var demoLinks = document.querySelector('.demo-links-accordion');
+  // if (demoLinks.style.display === 'none' || demoLinks.style.display === '') {
+  //   demoLinks.style.display = 'block';
+  // } else {
+  //   demoLinks.style.display = 'none';
+  // }
   var demoLinks = document.querySelector('.demo-links-accordion');
-  if (demoLinks.style.display === 'none' || demoLinks.style.display === '') {
-    demoLinks.style.display = 'block';
+  if (demoLinks.classList.contains('open')) {
+    demoLinks.classList.remove('open');
   } else {
-    demoLinks.style.display = 'none';
+    demoLinks.classList.add('open');
   }
 }

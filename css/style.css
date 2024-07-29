@@ -966,16 +966,28 @@ textarea {
 /* END Feature Updates List for projects */
 /* Demo Links Accordian */
 .demo-links-accordion {
-  display: none;
+  transition: all .3s ease-out;
   margin-top: 1rem;
-  max-height: 100px; /* Set a maximum height */
+  visibility: hidden;
+  max-height: 0px; /* Set a maximum height */
   overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  max-width: 100px;
+  width: 100%;
+  
+}
+.demo-links-accordion.open {
+  visibility: visible; /* Adjust to fit the content, or use a large value if unknown */
+  max-height: 110px;
+  max-width: fit-content;
   width: 100%;
   padding: 10px;
 }
 
 .demo-links-accordion .btn--med {
-  display: inline-block;
+  transition: all .3s;
+  display: flex;
+  flex-direction: column;
   margin: 10px auto;
   padding: 10px 30px;
   text-transform: uppercase;
