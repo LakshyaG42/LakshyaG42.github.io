@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3264RQMXK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-K3264RQMXK');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Monte Carlo Option Pricer</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script>
+      function sendGAEvent(linkName) {
+          gtag('event', 'click', {
+              'event_category': 'Navigation',
+              'event_label': linkName,
+              'value': linkName
+          });
+      }
+    </script>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/john-doe.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Lakshya Gour</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./" class="header__link" onclick="sendGAEvent('HomeFromHeader')"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#about" class="header__link" onclick="sendGAEvent('AboutFromHeader')">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#education" class="header__link" onclick="sendGAEvent('EducationFromHeader')">Education </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#projects" class="header__link" onclick="sendGAEvent('ProjectsFromHeader')">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#contact" class="header__link" onclick="sendGAEvent('ContactFromHeader')"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+         <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./" onclick="sendGAEvent('HomeFromSmallMenu')"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#about" onclick="sendGAEvent('AboutFromSmallMenu')"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#education" onclick="sendGAEvent('EducationFromSmallMenu')"> Education </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#projects" onclick="sendGAEvent('ProjectsFromSmallMenu')"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#contact" onclick="sendGAEvent('ContactFromSmallMenu')"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Monte Carlo Option Pricer</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Welcome! This project is currently still a work in progress. Please check back in a week or two for more updates. Thank you for your time!
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="https://github.com/LakshyaG42/MonteCarloOptionPricing" class="btn btn--bg" target="_blank">Code<img src="assets/svg/external_link_black.svg" alt="external link" class="btn--icon" /></a>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/jpeg/Figure_1.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <h3 class="project-details__content-heading">Learning About Monte Carlo Simulations</h3>
+              <p class="project-details__desc-para">
+                In the ever-evolving world of finance, I embarked on a journey to understand and apply the fascinating concept of Monte Carlo 
+                simulations to option pricing. This adventure took me through various libraries and resources, allowing me to explore the 
+                intricate world of stock market simulations and option valuation. 
+                <br>
+                <br>
+                My journey began with understanding of 
+                Monte Carlo. At its core, Monte Carlo simulation is a technique that leverages random sampling to generate a 
+                range of possible outcomes in a probabilistic model. So what better way then to learn it using a lecture available online:
+                <centre>
+                  <iframe id="ytplayer" type="text/html" width="640" height="360"
+                    src="https://www.youtube.com/embed/OgO1gpXSUzU"
+                    frameborder="0">
+                  </iframe>
+                </centre>
+                <br>
+              </p>
+              <h3 class="project-details__content-heading">Coding a Stock Simulation Program</h3>
+              <p class="project-details__desc-para">
+                After learning more about the process I found some libraries that could help me implement a <b>Monte Carlo Simulation</b> into code
+                and ways to get current data from Yahoo Finance. I then made a simulation program in <b>Python</b> which performs a Monte Carlo 
+                simulation to model the performance of a portfolio consisting of multiple stocks over a specified number of days. The goal of 
+                the code is to simulate how the portfolio's value might change over time, considering the historical mean returns and 
+                covariance between the selected stocks.
+                <br>
+                <br>
+                The main way that this code works is that a loop runs for each simulation (m), where:
+                Random returns are generated based on the mean returns and covariance matrix using Cholesky decomposition.
+                The portfolio's daily returns are calculated by multiplying the random returns with the portfolio weights and adding 1.
+                The cumulative product of daily returns is calculated to simulate the portfolio's value over time.
+                <br><br>
+                The results are stored in the <b>portfolio_sims</b> matrix.
+                uses <b>matplotlib.pyplot</b> to plot the simulated portfolio values over time. The x-axis represents the number of days, 
+                and the y-axis represents the portfolio value in dollars. The title and labels for the axes are added to the plot which is 
+                displayed at the top of this page.
+                <br><br>
+                The next step in my journey is to learn about how the Monte Carlo Method is used to price options.
+              </p>
+              <!--
+              <p class="project-details__desc-para">
+                is a...
+              </p>
+              -->
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">NumPy</div>
+                <div class="skills__skill">Matplotlib</div>
+                <div class="skills__skill">Pandas</div>
+                <div class="skills__skill">Pandas-DataReader</div>
+                <div class="skills__skill">GIT</div>
+                <div class="skills__skill">yfinance</div>
+              </div>
+            </div>
+            <!--
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See Live</h3>
+              <a
+                href="#"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Live Link</a
+              >
+              <a
+                href="#"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Code Link</a
+              >
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lakshya-gour/" onclick="sendGAEvent('LinkedinFooter')">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/LakshyaG42 onclick="sendGAEvent('GithubFooter')">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <p class="main-footer__short-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
+              tempora explicabo quae quod deserunt
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

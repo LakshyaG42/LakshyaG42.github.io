@@ -66,3 +66,17 @@ function toggleDemoLinks() {
     demoLinks.classList.add('open');
   }
 }
+
+function toggleProjectsMenu() {
+  var links = document.getElementById('hamburgerLinks');
+  if (links.style.maxHeight) {
+    links.style.maxHeight = null;
+  } else {
+    links.style.maxHeight = links.scrollHeight + "px";
+  }
+  if (links.style.visibility === 'visible') {
+    links.style.visibility = 'hidden';
+  } else {
+    links.style.visibility = 'visible';
+  }
+}
