@@ -117,10 +117,11 @@
         </div>
         <div class="home-hero__cta">
           <a href="./#projects" class="btn btn--bg" onclick="sendGAEvent('ProjectsFromMain')">Projects</a> <br><br>
-          <button class="btn btn--bg" onclick="toggleDemoLinks(); sendGAEvent('DemoLinksFromMain')">Live Demos <img src="assets/svg/ham-menu-black.svg" alt="external link" class="btn--icon" /></a>
+          <button class="btn btn--bg" onclick="toggleDemoLinks(); sendGAEvent('DemoLinksFromMain')">Demos<img src="assets/svg/ham-menu-black.svg" alt="external link" class="btn--icon" /></a>
           <div class="demo-links-accordion">
             <a href="https://www.lakshyagour.com/ApplicationTracker" class="btn--med " onclick="sendGAEvent('ApplicationTrackerFromDemoLinks')">Application Tracker</a>
-            <a href="https://www.lakshyagour.com/FinancialAnalyticsHub" class="btn--med " onclick="sendGAEvent('ApplicationTrackerFromDemoLinks')">Financial Analytics Hub</a>
+            <a href="https://www.lakshyagour.com/FinancialAnalyticsHub" class="btn--med " onclick="sendGAEvent('FinanicalHubFromDemoLinks')">Financial Analytics Hub</a>
+            <a href="https://www.lakshyagour.com/insider-trading-detector" class="btn--med " onclick="sendGAEvent('InsiderTradingDetectorFromDemoLinks')">Financial Analytics Hub</a>
           </div> 
         </div>
       </div>
@@ -258,6 +259,50 @@
           </span>
         </h2>
         <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/insidertradingdetector.png"
+                style = "border: 3px solid #000000;"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Insider Trading Detection System</h3>
+              <p class="projects__row-content-desc">
+                Developed an AI-enhanced system to detect suspicious insider trading by combining SEC data, stock price analysis, and LLM-generated trade explanations.</p>
+              <a
+                href="./insider-trading-detector"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                onclick="sendGAEvent('InsiderTradingDetector')"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/Intro_To_AI_NN_Architecture.png"
+                style = "border: 3px solid #000000;"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">AI-Powered Search and Navigation (Project Series)</h3>
+              <p class="projects__row-content-desc">
+                As part of my coursework, I designed intelligent agent systems for dynamic, uncertain environments, progressively building and analyzing increasingly complex AI models. These projects spanned search algorithms, probabilistic reasoning, and machine learning-based predictions.</p>
+              <a
+                href="./intro-to-ai"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                onclick="sendGAEvent('IntroToAI')"
+                >Learn More</a
+              >
+            </div>
+          </div>
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
