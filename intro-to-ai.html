@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3264RQMXK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-K3264RQMXK');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Intro to Artificial Intelligence Projects</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script>
+      function sendGAEvent(linkName) {
+          gtag('event', 'click', {
+              'event_category': 'Navigation',
+              'event_label': linkName,
+              'value': linkName
+          });
+      }
+    </script>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/john-doe.png"
+              alt="Lakshya Gour Image"
+              class="header__logo-img"
+            />`
+          </div>
+          <span class="header__logo-sub">Lakshya Gour</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./" class="header__link" onclick="sendGAEvent('HomeFromHeader')"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#about" class="header__link" onclick="sendGAEvent('AboutFromHeader')">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#education" class="header__link" onclick="sendGAEvent('EducationFromHeader')">Education </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#projects" class="header__link" onclick="sendGAEvent('ProjectsFromHeader')">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#contact" class="header__link" onclick="sendGAEvent('ContactFromHeader')"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+         <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./" onclick="sendGAEvent('HomeFromSmallMenu')"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#about" onclick="sendGAEvent('AboutFromSmallMenu')"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#education" onclick="sendGAEvent('EducationFromSmallMenu')"> Education </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#projects" onclick="sendGAEvent('ProjectsFromSmallMenu')"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#contact" onclick="sendGAEvent('ContactFromSmallMenu')"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">AI-Powered Search and Navigation</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            CS 520 (Graduate Introduction to Artificial Intelligence) Project Series
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="intro-to-ai-project3-writeup.html" class="btn btn--bg" target="_blank">Project Writeup <img src="assets/svg/external_link_black.svg" alt="external link" class="btn--icon" /></a>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Introduction</h3>
+              <p class="project-details__desc-para">
+                As part of my coursework, I designed intelligent agent systems for dynamic, uncertain environments, progressively building and analyzing increasingly complex AI models. These projects spanned search algorithms, probabilistic reasoning, and machine learning-based predictions.
+              </p>
+              <h3 class="project-details__content-title">Fire Extinguisher Bot (Project 1)</h3>
+              <h3 class="project-details__content-heading">Objective</h3> 
+              <p class="project-details__desc-para">
+                 Build bots to navigate a spaceship under fire hazards and press an emergency button before getting trapped.
+                 <h3 class="project-details__content-heading">Skills & Tools Used:</h3>
+                 <ol class="project-details__desc-list"> 
+                  <li class="project-details__desc-list">Graph Search (A*, Uniform Cost Search)</li>
+                  <li class="project-details__desc-list">Heuristic Design (Manhattan, Euclidean, Chebyshev distances)</li>
+                  <li class="project-details__desc-list">Risk-aware pathfinding using dynamic fire spread prediction</li>
+                  <li class="project-details__desc-list">Success rate analysis across varying environmental flammability (parameter q)
+                  </li>
+                </ol>  
+              </p>
+              <p class="project-details__desc-para">
+                <h3 class="project-details__content-heading">Highlights:</h3>
+                <ol class="project-details__desc-list"> 
+                  <li class="project-details__desc-list">Created, tuned and tested 10+ bot strategies.</li>
+                  <li class="project-details__desc-list">Final bot (Bot 9) used a cost function balancing distance, immediate fire risk, and future spread risk.</li>
+                  <li class="project-details__desc-list">Achieved the highest average success rate (74.4%) across simulations.</li>
+                </ol>  
+              </p> 
+              <div class="project-details__links">
+                <a
+                  href="intro-to-ai-project1-writeup.html"
+                  class="btn btn--med btn--theme-inv project-details__links-btn"
+                  target="_blank"
+                  >View Writeup</a
+                >
+              </div>
+              <br/> <br/> <hr> <br/> <br/>
+              
+              <h3 class="project-details__content-title">Localization and Target Tracking (Project 2)</h3>
+              <div class="project-details__showcase-img-cont">
+                <video width=49% height = 100% controls>
+                  <source src= "assets\videos\baseline_simulation_animation.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <video width=50% height = 100% controls>
+                  <source src= "assets\videos\improved_bot_2_simulation.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+                
+            
+              <h3 class="project-details__content-heading">Objective</h3> 
+              <p class="project-details__desc-para">
+                Build bots that localize themselves in an unknown grid and capture a hidden "space rat" using partial noisy observations.                 <h3 class="project-details__content-heading">Skills & Tools Used:</h3>
+                 <ol class="project-details__desc-list"> 
+                  <li class="project-details__desc-list">Bayesian Networks for probabilistic localization
+
+                  </li>
+                  <li class="project-details__desc-list">Utility-based decision-making (entropy reduction)</li>
+                  <li class="project-details__desc-list">Dynamic re-planning with BFS (Breadth-First Search)</li>
+                  <li class="project-details__desc-list">Handling both stationary and randomly moving targets
+                  </li>
+                </ol>  
+              </p>
+              <p class="project-details__desc-para">
+                <h3 class="project-details__content-heading">Highlights:</h3>
+                <ol class="project-details__desc-list"> 
+                  <li class="project-details__desc-list">Designed baseline and two improved bots.</li>
+                  <li class="project-details__desc-list">Incorporated a transition model for moving targets, significantly improving tracking performance.</li>
+                  <li class="project-details__desc-list">Conducted 100+ simulation experiments per setup; statistical tests validated improvements.</li>
+                </ol>  
+              </p> 
+              <div class="project-details__links">
+                <a
+                  href="intro-to-ai-project2-writeup.html"
+                  class="btn btn--med btn--theme-inv project-details__links-btn"
+                  target="_blank"
+                  >View Writeup</a
+                >
+              </div>
+              <br/> <br/> <hr> <br/> <br/>
+              <h3 class="project-details__content-title">Predicting Capture Time with Neural Networks (Project 3)</h3>
+              <div class="project-details__showcase-img-cont">
+                <img
+                  src="./assets/jpeg/Intro_To_AI_NN_Architecture.png"
+                  alt="Project Image"
+                  class="project-details__showcase-img"
+                />
+              </div>
+              <h3 class="project-details__content-heading">Objective</h3> 
+              <p class="project-details__desc-para">
+                Predict the remaining time steps needed for a bot to catch a space rat, using probabilistic state representations.
+                <h3 class="project-details__content-heading">Skills & Tools Used:</h3>
+                 <ol class="project-details__desc-list"> 
+                  <li class="project-details__desc-list">Convolutional Neural Networks (CNNs)</li>
+                  <li class="project-details__desc-list">Regression tasks (MSE, MAE loss functions)</li>
+                  <li class="project-details__desc-list">Dataset generation from probabilistic simulations (~27,000 samples)</li>
+                  <li class="project-details__desc-list">Model optimization (batch normalization, dropout, residual connections)</li>
+                </ol>  
+              </p>
+              <p class="project-details__desc-para">
+                <h3 class="project-details__content-heading">Highlights:</h3>
+                <ol class="project-details__desc-list"> 
+                  <li class="project-details__desc-list">Designed a lightweight CNN processing 2×30×30 probability matrices.</li>
+                  <li class="project-details__desc-list">Achieved low test losses (MSE: 974.85; MAE: 17.71) relative to task variance.</li>
+                  <li class="project-details__desc-list">Showcased effective generalization through careful regularization strategies.</li>
+                </ol>  
+              </p> 
+              <div class="project-details__links">
+                <a
+                  href="intro-to-ai-project3-writeup.html"
+                  class="btn btn--med btn--theme-inv project-details__links-btn"
+                  target="_blank"
+                  >View Writeup</a
+                >
+              </div>
+              <br/> <br/> <br/> <br/>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">Pytorch</div>
+                <div class="skills__skill">Numpy</div>
+                <div class="skills__skill">Matplotlib </div>
+                <div class="skills__skill">Pandas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lakshya-gour/" onclick="sendGAEvent('LinkedinFooter')">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/LakshyaG42" onclick="sendGAEvent('GithubFooter')">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Lakshya Gour</h4>
+            <p class="main-footer__short-desc">
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
